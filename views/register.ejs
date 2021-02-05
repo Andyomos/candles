@@ -1,0 +1,60 @@
+<%- include('./__partial__files/header.ejs') %>
+
+    <%- include('./__partial__files/nav.ejs') %>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="blue-text darken-1">
+                        <%= companyName %> Members Registration
+                    </h3>
+                    <typography class="flow-text">
+                        Register below to become a member of <%= companyName %> private trading blog and gain access to endless resources to help you with your journey to becoming a trader and the best of it all, it's free to join.
+                    </typography>
+                </div>
+            </div>
+
+            <!-- Register Form -->
+            <div class="row">
+                <form class="col s12" action="/register" method="POST">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" name="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" name="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" name="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" name="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                   
+
+                    <!-- INCLUDE BUTTON LINE -->
+                    <%- include('./__button__files/register.ejs') %> 
+                    
+                    <div class="row" style="padding-top: 2rem;">
+                        <div class="col s12">
+                            Already have an accoumt?:
+                            <span class="helper-text" data-error="wrong" data-success="right"><a href="/login">Log In</a></span>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <%- include('./__partial__files/footer.ejs') %>

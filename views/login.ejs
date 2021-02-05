@@ -1,0 +1,74 @@
+<%- include('./__partial__files/header.ejs') %>
+
+    <%- include('./__partial__files/nav.ejs') %>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="blue-text darken-1"><%= companyName %>  Members Area</h3>
+                    <typography class="flow-text">
+                        Login below to the members area, if you don't have an account yet, create one by clicking on the Register Now link below.
+                    </typography>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 2rem">
+                <div class="col s12 m6">
+                    <!-- Login FORM -->
+
+                    <form class="col s12" action="/login"  method="POST"> 
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="first_name" name="first_name" type="text" class="validate" autocomplete="off">
+                                <label for="first_name">Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" name="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password" name="password"type="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+
+                        <!-- INCLUDE BUTTON LINE -->
+                        <%- include('./__button__files/login.ejs') %> 
+
+                        <div class="row" style="padding-top: 2rem;">
+                            <div class="col s12">
+                                Don't have an account?:
+                                    <span class="helper-text" data-error="wrong" data-success="right"><a href="/register"> Register Now</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="col s12 m6 hide-on-med-and-down" style="padding-left: 3rem;">
+                        <h4 class="blue-text darken-1">Bullish Harami Signal </h4>
+                        <p><img class="activator materialboxed" src="images/bullishharami.png" alt="Candlesticks image" height="300"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container row">
+                <div class="col s12" >
+                    <h3 class="blue-text darken-1">
+                        Benefits Of Members Account
+                    </h3>
+                    <typography class="flow-text">
+                        Becoming a member of <%= companyName %> gives you the opportunity to learn how to trade and to also earn if you which to while, you improve your trading skills.
+                    </typography>
+                </div>
+                <div class="col s12 m6">3</div>
+                <div class="col s12 m6">4</div>
+            </div>
+
+        </div>
+
+
+        <%- include('./__partial__files/footer.ejs') %>

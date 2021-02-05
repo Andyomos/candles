@@ -1,0 +1,24 @@
+<%- include('./__partial__files/header.ejs') %>
+    <%- include('./__partial__files/blognav.ejs') %>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="blue-text darken-1" style="text-transform: capitalize;">Edit blog</h2>
+                    <hr />
+                        <blockquote>
+                            <h2 class="green-text" style="text-transform: capitalize;">
+                                <%= blog.title %>
+                            </h2>
+                        </blockquote>
+                        <small>
+                            <%= blog.snippet %>
+                        </small>
+                        <p>
+                            <%= blog.content %>
+                        </p>
+                </div>
+
+                <%- include('./__button__files/delete.ejs') %>
+        
+        <%- include('./__partial__files/footer.ejs') %>

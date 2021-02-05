@@ -1,0 +1,35 @@
+<%- include('./__partial__files/header.ejs') %>
+
+    <%- include('./__partial__files/blognav.ejs') %>
+       
+    <div class="container">
+        <div class="row">
+           <div class="col s12">
+               <h2 class="blue-text darken-1" style="text-transform: capitalize;">All blogs</h2><hr/>
+
+               <% if(blogs.length > 0) { %> 
+                    <% blogs.forEach((blog) => { %> 
+                        <a class="single" href="/tradeblog/<%= blog._id %>">
+                            <blockquote>
+                                <h4 class="green-text" style="text-transform: capitalize;"><%= blog.title %></h4>
+                            </blockquote>
+                            <small><%= blog.snippet %></small>
+                            <p><%= blog.content %></p>
+                        </a>
+                    <% }) %> 
+
+                <% } else { %>
+                    
+                    <h3 class="blue-text darken-1">There are no blogs to display.</h3>
+                    <typography class="flow-text">
+                        Check back soon...
+                    </typography>
+
+
+                <% } %> 
+
+           </div>
+        </div>
+    </div>
+
+        <%- include('./__partial__files/footer.ejs') %>

@@ -1,0 +1,72 @@
+<%- include('./__partial__files/header.ejs') %>
+
+    <%- include('./__partial__files/nav.ejs') %>
+
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="blue-text darken-1">Contact Us</h1>
+                    <typography class="flow-text">
+                        Use the form below to contact us for any enquiries or questions. <br/>We'd  love to hear from you, drop us a message and don't forget to register to our members page where you can find memmbers only trading blogs.</typography> 
+                    </typography>
+                </div>
+            </div>
+
+            <!-- Contact Form  -->
+            <div class="row">
+                <div class="col s12 m6">
+                    <form class="col s12" action="/contact" method="POST"> 
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input  id="name" name="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" name="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+            
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                                <label for="message">Message</label>
+                            </div>   
+                        </div>
+
+                        <button class="btn-large waves-effect waves-light blue darken-1" type="submit" name="action">
+                            Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col s12 m6" style="padding-left: 30px; padding-top: 3rem;">
+                    <h4 class="blue-text darken-1">We respond on time</h4>
+                    <p>If your message is an urgent message, don't be worried because we reply to our message with 24 to 48 hours. You can also reach us through our social handles if it's urgent urgent.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="blue-text darken-1">Candlesticks</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate deserunt quidem aut aliquid cumque repellendus accusamus distinctio tenetur, aperiam itaque repudiandae rerum fuga ea laborum, soluta corrupti hic delectus? Velit excepturi veritatis dicta doloremque vel exercitationem, assumenda, et autem deserunt est in nesciunt qui eveniet cupiditate cumque! Debitis quisquam earum ullam error odit nisi voluptates quod in expedita nostrum? Earum.</p>
+                </div>
+                <div class="col s12 m6">
+                    <h3 class="blue-text darken-1">Trading Books</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quis deleniti, at nisi provident libero harum quisquam alias dicta recusandae error fuga fugit, blanditiis, unde adipisci consequuntur tempora nostrum atque.</p>
+                </div>
+                <div class="col s12 m6">
+                    <h3 class="blue-text darken-1">Candlesticks Books</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quis deleniti, at nisi provident libero harum quisquam alias dicta recusandae error fuga fugit, blanditiis, unde adipisci consequuntur tempora nostrum atque.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    <%- include('./__partial__files/footer.ejs') %>

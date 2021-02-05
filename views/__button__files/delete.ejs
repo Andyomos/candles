@@ -1,0 +1,24 @@
+<!-- DELETE BUTTONS FOR DETAILS -->
+
+<button id="delete" data-doc=<%=blog._id %> class="btn-large waves-effect waves-light blue darken-1" type="submit"
+    name="action">Delete
+    <i class="material-icons right">delete_forever</i>
+</button>
+
+</div>
+</div>
+
+<script>
+    const trashcan = document.getElementById('delete');
+
+    trashcan.addEventListener('click', (e) => {
+        const endpoint = `/tradeblog/${trashcan.dataset.doc}`;
+
+        fetch(endpoint, {
+            method: 'DELETE'
+        })
+            .then((response) => response.json())
+            .then((data) => console.log(data))
+            .catch((err) => console.log(err));
+    });
+</script>

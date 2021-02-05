@@ -1,0 +1,65 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.showCase{
+  
+    min-height: 60vh;
+    background-image: url('./images/tradedisplay.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 10;
+    
+}
+
+.showCase2{
+  
+    min-height: 60vh;
+    background-image: url('./images/eurcad.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 10;
+    
+}
+
+.showCaseDisplay{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.showCaseDisplay h1, .showCaseDisplay typography{
+    background-color: rgba(0, 0, 0, 0.411);
+    letter-spacing: 2px;
+}
+
+p {
+    letter-spacing: 1.4px;
+    font-size: 1.2rem;
+}
+
+.showCaseDisplay h1{
+    font-size: 3rem;
+}
+
+.showCaseDisplay h1:hover{
+    font-size: 6rem;
+    color: red;
+}
+
+.showCaseDisplay typography{
+    font-size: 1.8rem
+
+}

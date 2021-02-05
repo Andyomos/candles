@@ -1,0 +1,25 @@
+
+<div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper blue darken-1">
+            <a href="/tradeblog" class="brand-logo" style="padding-left: 20px;">
+                <%= companyName %>
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down" style="padding-right: 20px;">
+                <li><a href="/tradeblog">Home</a></li>
+                <li><a href="/tradeblog/create">New Blog</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="/tradeblog">Home</a></li>
+    <li><a href="/tradeblog/create">New Blog</a></li>
+    <li><a href="/">Logout</a></li>
+</ul>
+
+<!-- JQUERY FUNC FILE INCLUDED -->
+<%- include('./jquery__func.ejs') %>
